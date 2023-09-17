@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:letsgooapp/Button.dart';
 import 'package:letsgooapp/FirstScreen.dart';
 
 void main() {
@@ -16,7 +17,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
 
-      home: const FirstScreen(),
+      home: const Button(),
       //   home: const Scaffold(
       //     body: Center(
       //       child: BiggerText(text: "Hello, world!"),
