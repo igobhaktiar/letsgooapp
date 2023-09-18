@@ -1,6 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:letsgooapp/Button.dart';
 import 'package:letsgooapp/FirstScreen.dart';
+import 'package:letsgooapp/InputCheck.dart';
+import 'package:letsgooapp/InputRadio.dart';
+import 'package:letsgooapp/InputWidget.dart';
+import 'package:letsgooapp/InputWidgetController.dart';
+import 'package:letsgooapp/ShowImage.dart';
+import 'package:letsgooapp/TambahFont.dart';
+import 'package:letsgooapp/switch.dart';
 
 void main() {
   runApp(const MyApp());
@@ -14,10 +21,11 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
+        fontFamily: 'Poppins',
         primarySwatch: Colors.blue,
       ),
 
-      home: const Button(),
+      home: const TambahFont(),
       //   home: const Scaffold(
       //     body: Center(
       //       child: BiggerText(text: "Hello, world!"),
