@@ -1,12 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:letsgooapp/Button.dart';
+import 'package:letsgooapp/Expanded.dart';
 import 'package:letsgooapp/FirstScreen.dart';
 import 'package:letsgooapp/InputCheck.dart';
 import 'package:letsgooapp/InputRadio.dart';
 import 'package:letsgooapp/InputWidget.dart';
 import 'package:letsgooapp/InputWidgetController.dart';
+import 'package:letsgooapp/ScrollingScreen.dart';
 import 'package:letsgooapp/ShowImage.dart';
 import 'package:letsgooapp/TambahFont.dart';
+import 'package:letsgooapp/WidgetFlexible.dart';
 import 'package:letsgooapp/switch.dart';
 
 void main() {
@@ -25,7 +28,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
 
-      home: const TambahFont(),
+      home: const WidgetFlexible(),
       //   home: const Scaffold(
       //     body: Center(
       //       child: BiggerText(text: "Hello, world!"),
