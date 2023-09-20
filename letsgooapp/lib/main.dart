@@ -7,6 +7,7 @@ import 'package:letsgooapp/InputRadio.dart';
 import 'package:letsgooapp/InputWidget.dart';
 import 'package:letsgooapp/InputWidgetController.dart';
 import 'package:letsgooapp/ScrollingScreen.dart';
+import 'package:letsgooapp/SecondScreen.dart';
 import 'package:letsgooapp/ShowImage.dart';
 import 'package:letsgooapp/TambahFont.dart';
 import 'package:letsgooapp/WidgetFlexible.dart';
@@ -28,7 +29,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
 
-      home: const WidgetFlexible(),
+      home: const FirstScreen(),
       //   home: const Scaffold(
       //     body: Center(
       //       child: BiggerText(text: "Hello, world!"),

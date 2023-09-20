@@ -1,7 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:letsgooapp/SecondScreen.dart';
 
 class FirstScreen extends StatelessWidget {
-  const FirstScreen({Key? key}) : super(key: key);
+  final String message = 'Tes';
+
+  const FirstScreen({super.key});
+
 
   @override
   Widget build(BuildContext context) {
@@ -32,16 +36,16 @@ class FirstScreen extends StatelessWidget {
           onPressed: () {},
         ),
       ),
-      body: const Padding(
-          padding: EdgeInsets.all(16),
+      body:  Padding(
+          padding: const EdgeInsets.all(16),
           child: Column(
             children: <Widget>[
-              Text(
+             const Text(
                 'MainAxisAligment.SpaceEvenly',
                 style: TextStyle(fontSize: 18),
               ),
-              Padding(padding: EdgeInsets.all(8)),
-              Row(
+             const Padding(padding: EdgeInsets.all(8)),
+             const Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: <Widget>[
                   Icon(Icons.share),
@@ -49,13 +53,13 @@ class FirstScreen extends StatelessWidget {
                   Icon(Icons.thumb_down)
                 ],
               ),
-              Padding(padding: EdgeInsets.all(8)),
-              Text(
+             const Padding(padding: EdgeInsets.all(8)),
+             const Text(
                 'MainAxisAligment.SpaceEvenly',
                 style: TextStyle(fontSize: 18),
               ),
-              Padding(padding: EdgeInsets.all(8)),
-              Row(
+             const Padding(padding: EdgeInsets.all(8)),
+              const Row(
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: <Widget>[
                   Icon(Icons.share),
@@ -63,13 +67,13 @@ class FirstScreen extends StatelessWidget {
                   Icon(Icons.thumb_down)
                 ],
               ),
-              Padding(padding: EdgeInsets.all(8)),
-              Text(
+              const Padding(padding: EdgeInsets.all(8)),
+              const Text(
                 'MainAxisAligment.spaceBetween',
                 style: TextStyle(fontSize: 18),
               ),
-              Padding(padding: EdgeInsets.all(8)),
-              Row(
+              const Padding(padding: EdgeInsets.all(8)),
+              const Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: <Widget>[
                   Icon(Icons.share),
@@ -77,13 +81,13 @@ class FirstScreen extends StatelessWidget {
                   Icon(Icons.thumb_down)
                 ],
               ),
-              Padding(padding: EdgeInsets.all(8)),
-              Text(
+              const Padding(padding: EdgeInsets.all(8)),
+              const Text(
                 'MainAxisAligment.star',
                 style: TextStyle(fontSize: 18),
               ),
-              Padding(padding: EdgeInsets.all(8)),
-              Row(
+              const Padding(padding: EdgeInsets.all(8)),
+              const Row(
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: <Widget>[
                   Icon(Icons.share),
@@ -93,13 +97,13 @@ class FirstScreen extends StatelessWidget {
                   Icon(Icons.thumb_down)
                 ],
               ),
-              Padding(padding: EdgeInsets.all(8)),
-              Text(
+              const Padding(padding: EdgeInsets.all(8)),
+              const Text(
                 'MainAxisAligment.end',
                 style: TextStyle(fontSize: 18),
               ),
-              Padding(padding: EdgeInsets.all(8)),
-              Row(
+              const Padding(padding: EdgeInsets.all(8)),
+              const Row(
                 mainAxisAlignment: MainAxisAlignment.end,
                 children: <Widget>[
                   Icon(Icons.share),
@@ -109,8 +113,16 @@ class FirstScreen extends StatelessWidget {
                   Icon(Icons.thumb_down)
                 ],
               ),
+              ElevatedButton(
+                child: const Text('Pindah Screen'),
+                onPressed: (){
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => SecondScreen(message)));
+                },
+              )
             ],
-          )),
+          )
+      ),
       //   decoration:  BoxDecoration(
       //     color: Colors.red,
       //     border: Border.all(color: Colors.green, width: 3),
