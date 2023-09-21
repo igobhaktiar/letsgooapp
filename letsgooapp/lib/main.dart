@@ -2,10 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:letsgooapp/Button.dart';
 import 'package:letsgooapp/Expanded.dart';
 import 'package:letsgooapp/FirstScreen.dart';
+import 'package:letsgooapp/Homepage.dart';
 import 'package:letsgooapp/InputCheck.dart';
 import 'package:letsgooapp/InputRadio.dart';
 import 'package:letsgooapp/InputWidget.dart';
 import 'package:letsgooapp/InputWidgetController.dart';
+import 'package:letsgooapp/ResponsivePage.dart';
 import 'package:letsgooapp/ScrollingScreen.dart';
 import 'package:letsgooapp/SecondScreen.dart';
 import 'package:letsgooapp/ShowImage.dart';
@@ -29,7 +31,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
 
-      home: const FirstScreen(),
+      home: const ResponsivePage(),
       //   home: const Scaffold(
       //     body: Center(
       //       child: BiggerText(text: "Hello, world!"),
